@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bashcraft Club</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/lucide-react/dist/lucide.css">
+</head>
+<body>
+    <div class="min-h-screen bg-gray-50">
+        <!-- Navigation -->
+        <nav class="fixed w-full bg-gray-900 z-40">
+            <div class="max-w-7xl mx-auto px-4 py-4 flex justify-between items-center">
+                <span class="text-xl font-bold text-white">Bashcraft Club</span>
+                <div class="hidden md:flex navigation-menu">
+                    <a class="text-white px-4 py-2 hover:text-blue-400 transition-colors" href="#past-events">Past Events</a>
+                    <a class="text-white px-4 py-2 hover:text-blue-400 transition-colors" href="#upcoming-events">Upcoming Events</a>
+                    <a class="text-white px-4 py-2 hover:text-blue-400 transition-colors" href="#contact">Contact</a>
+                </div>
+                <button class="md:hidden text-white" id="menu-button">
+                </button>
+            </div>
+        </nav>
+
+        <!-- Hero Section -->
+        <div class="relative h-screen flex items-center justify-center bg-gray-900">
+            <div class="absolute inset-0">
+                <img src="logo_bashcraft.png" alt="Hero" class="w-full h-full object-cover opacity-40">
+            </div>
+            <div class="relative z-10 text-center text-white px-4">
+                <h1 class="text-5xl md:text-7xl font-bold mb-6">Welcome to Bashcraft Club</h1>
+                <p class="text-xl md:text-2xl mb-8 opacity-90">Where passion meets creativity. Join our exciting journey!</p>
+                <div class="flex flex-col md:flex-row gap-4 justify-center">
+                    <button class="bg-blue-600 hover:bg-blue-700 text-aqua py-2 px-4 rounded">Join Now</button>
+                    <button class="text-aqua border border-white hover:bg-white hover:text-gray-900 py-2 px-4 rounded">Learn More</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Event Countdown -->
+         <section id="upcoming-events">
+        <div class="bg-gray-900 text-white py-12">
+            <div class="max-w-7xl mx-auto px-4">
+                <h2 class="text-3xl font-bold text-center mb-8">Upcoming Events</h2>
+                <h2 class="text-3xl font-bold text-center mb-8">Next Event Starting In</h2>
+                <div class="flex justify-center gap-4 md:gap-8 countdown">
+                    <!-- Countdown cards will be injected here -->
+                </div>
+            </div>
+        </div>
+    </section>
+
+        <!-- Past Events Section -->
+        <section id="past-events" class="py-16 px-4">
+            <div class="max-w-7xl mx-auto">
+                <h2 class="text-3xl font-bold text-center mb-12">Past Events</h2>
+                <div class="grid md:grid-cols-2 gap-8 past-events">
+                    <!-- Event 1: Invest-a-thon -->
+                    <div class="bg-white rounded shadow-md overflow-hidden">
+                        <img src="invest-a-thon_poster.png" alt="Invest-a-thon" class="past-event-image">
+                        <div class="p-4">
+                            <h3 class="text-xl font-semibold">Invest-a-thon</h3>
+                            <p class="text-gray-600">26 March 2024</p>
+                            <p class="text-gray-500 mt-2">Come experience the thrilling confluence of innovation and finance at Invest-a-Thon.
+                            Sponsored by Zerodha with a finance webinar and hackathon.</p>
+                        </div>
+                    </div>
+                    <!-- Event 2: Asli-Engineer -->
+                    <div class="bg-white rounded shadow-md overflow-hidden">
+                        <img src="Asli-engineering_poster.png" alt="Asli-Engineer" class="past-event-image">
+                        <div class="p-4">
+                            <h3 class="text-xl font-semibold">Asli-Engineering</h3>
+                            <p class="text-gray-600">24 February 2024</p>
+                            <p class="text-gray-500 mt-2">An inspiring session with Arpit Bhayani, 
+                            Staff Engineer at Google, discussing real-world engineering challenges and career advice for budding engineers.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Footer -->
+        <footer class="bg-gray-900 text-white py-12">
+            <div class="max-w-7xl mx-auto px-4">
+                <div class="grid md:grid-cols-3 gap-8">
+                    <div>
+                        <h3 class="text-xl font-bold mb-4">Bashcraft Club</h3>
+                        <p class="text-gray-400">Where passion meets creativity. Join our exciting journey!</p>
+                    </div>
+                    <div>
+                        <h3 class="text-xl font-bold mb-4">Quick Links</h3>
+                        <ul class="space-y-2">
+                            <li><button class="text-gray-400 hover:text-white p-0">Home</button></li>
+                            <li><button class="text-gray-400 hover:text-white p-0">Past Events</button></li>
+                            <li><button class="text-gray-400 hover:text-white p-0">Upcoming Events</button></li>
+                        </ul>
+                    </div>
+                    <div>
+                        <section id = "contact">
+                        <h3 class="text-xl font-bold mb-4">Connect With Us</h3>
+                        <div class="flex space-x-4">
+                            <a href="https://github.com/BashCraftClub" target="_blank" class="text-gray-400 hover:text-white">
+                                <img src="https://img.icons8.com/ios-filled/50/ffffff/github.png" alt="GitHub" class="w-6 h-6">
+                            </a>
+                            <a href ="https://www.linkedin.com/company/bashcraft/" target="_blank" class="text-gray-400 hover:text-white">
+                                <img src="https://img.icons8.com/ios-filled/50/ffffff/instagram-new.png" alt="Instagram" class="w-6 h-6">
+                            </a>
+                            <a href="https://www.linkedin.com/company/bashcraft/" target="_blank" class="text-gray-400 hover:text-white"></a>
+                                <img src="https://img.icons8.com/ios-filled/50/ffffff/linkedin.png" alt="Linkdin" class="w-6 h-6">
+                            </a>
+                        </div>
+                    </section>
+
+                    </div>
+                </div>
+            
+                <div class="border-t border-gray-800 mt-8 pt-8 text-center text-gray-400">
+                    <p>&copy; 2024 Bashcraft Club. All rights reserved.</p>
+                </div>
+            </div>
+        </footer>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
